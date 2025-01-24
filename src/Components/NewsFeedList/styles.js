@@ -1,0 +1,267 @@
+import { StyleSheet } from "react-native";
+import { getWidth } from "../../../Utils/NewResponsive";
+import { HP, WP } from "../../../Utils/Resposive";
+import { COLORS } from "../../Constants/Colors";
+
+const styles = StyleSheet.create({
+  container: { flex: 1, marginVertical: 10 },
+  sugestBorder: {
+    marginLeft: 15,
+    marginRight: 10,
+    marginTop: -4,
+  },
+  noPostsContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: COLORS.white,
+    width: "80%",
+    alignSelf: "center",
+    marginVertical: 10,
+    marginTop: 10,
+    padding: 10,
+    borderRadius: 10,
+    shadowColor: COLORS.black,
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4.65,
+
+    elevation: 8,
+  },
+
+  sugestedPost: {
+    // borderWidth: 0.6,
+    justifyContent: "center",
+    marginLeft: 13,
+    marginRight: 13,
+
+    width: WP(92),
+    // borderBottomColor: "#888da8ad",
+    borderTopColor: "#e6ecf500",
+    borderLeftColor: "#e6ecf500",
+    borderRightColor: "#e6ecf500",
+    borderBottomColor: "#888da8ad",
+    paddingBottom: 10,
+    color: "#888da8",
+    borderTopWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+  },
+
+  backgroundVideo: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
+
+  tagTxt: {
+    left: getWidth(2.5),
+    textDecorationLine: "underline",
+    color: COLORS.primary,
+  },
+  ModelContanier: {
+    flex: 1,
+    backgroundColor: COLORS.white,
+  },
+  singleIcon: {
+    marginRight: 5,
+  },
+  footer: {
+    position: "absolute",
+    backgroundColor: COLORS.white,
+    left: 0,
+    right: 0,
+    height: 50,
+    bottom: 0,
+    borderTopWidth: 1,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    borderTopColor: COLORS.cocoGrey,
+    flexDirection: "row",
+  },
+  header: {
+    borderBottomColor: COLORS.cocoGrey,
+    borderBottomWidth: 1,
+    height: 50,
+    justifyContent: "space-between",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+  imgAndStatus: {
+    flexDirection: "row",
+  },
+  upperTab: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: WP(3.5),
+    paddingTop: 5,
+    marginTop: 15,
+    paddingBottom: 8,
+    // backgroundColor: "red",
+  },
+  upperTabReel: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    paddingHorizontal: WP(3.5),
+    backgroundColor: COLORS.black,
+    // marginHorizontal: 15,
+    paddingBottom: 8,
+    // backgroundColor: "red",
+  },
+
+  icons: {
+    flexDirection: "row",
+    position: "absolute",
+    flex: 0.5,
+    alignSelf: "baseline",
+    right: 4,
+  },
+  name: {
+    fontSize: 15,
+    color: COLORS.primary,
+    fontWeight: "bold",
+  },
+  action: {
+    color: COLORS.lightGray,
+    marginLeft: 5,
+  },
+  mapaction: {
+    color: COLORS.lightGray,
+    marginLeft: 5,
+    fontWeight: "bold",
+  },
+  time: {
+    color: COLORS.lightGray,
+    marginLeft: 10,
+    paddingRight: 5,
+  },
+  feeling_action: { color: COLORS.lightGray, marginTop: HP(0.5) },
+  feeling_value: {
+    fontWeight: "bold",
+    color: COLORS.darkGray,
+    marginTop: HP(0.5),
+  },
+  imageShare: {
+    flex: 1,
+    justifyContent: "center",
+    width: WP(92),
+    height: HP(45),
+  },
+  image: {
+    flex: 1,
+    justifyContent: "center",
+    width: WP(100),
+    height: HP(45),
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  modalView: {
+    margin: 20,
+    backgroundColor: COLORS.white,
+    borderRadius: 20,
+    padding: 35,
+    alignItems: "center",
+    shadowColor: COLORS.transparent,
+    shadowOffset: {
+      width: 0,
+      height: 12,
+    },
+    shadowOpacity: 0.58,
+    shadowRadius: 16.0,
+    elevation: 24,
+    height: WP(45),
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  colorPost: {
+    flex: 1,
+    justifyContent: "center",
+    // width: WP(100),
+    // height: HP(40),
+
+    minHeight: HP(40),
+  },
+  imageThumbnailPost: {
+    justifyContent: "center",
+    alignItems: "center",
+    height: 200,
+  },
+  sharePost: {
+    borderWidth: 0.5,
+    borderColor: COLORS.cocoGrey,
+    marginHorizontal: 15,
+    marginBottom: 10,
+    paddingVertical: 10,
+  },
+  noContent: {
+    borderWidth: 0.5,
+    borderColor: COLORS.cocoGrey,
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginHorizontal: 15,
+    marginBottom: 10,
+    paddingVertical: 10,
+  },
+  sharePostReel: {
+    borderWidth: 0.5,
+    borderColor: COLORS.black,
+    backgroundColor: COLORS.black,
+    marginHorizontal: 15,
+    marginBottom: 10,
+    paddingVertical: 5,
+  },
+  noPostsContainer: {
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: COLORS.white,
+    width: "80%",
+    alignSelf: "center",
+    marginVertical: 15,
+    padding: 10,
+    borderRadius: 10,
+    shadowColor: COLORS.transparent,
+    shadowOffset: {
+      width: 0,
+      height: 4,
+    },
+    shadowOpacity: 0.3,
+    shadowRadius: 4.65,
+
+    elevation: 8,
+  },
+  iconContainer: {
+    marginLeft: 15, // Add some left margin for spacing
+  },
+  flashMessageContainer: {
+    flexDirection: "row",
+    alignItems: "flex-end",
+    justifyContent: "space-between",
+    width: 360,
+  },
+  flashMessageContainerText: {
+    color: COLORS.white,
+    fontSize: 15,
+    fontWeight: "bold",
+    marginLeft: 8,
+    paddingBottom: 12,
+  },
+  undoTextContainer: {
+    color: COLORS.primary,
+    fontWeight: "bold",
+    paddingBottom: 12,
+    fontSize: 15,
+  },
+});
+export default styles;

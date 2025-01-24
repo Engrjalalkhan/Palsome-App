@@ -1,0 +1,207 @@
+import { StyleSheet } from "react-native";
+import {
+  widthPercentageToDP,
+  heightPercentageToDP,
+} from "react-native-responsive-screen";
+import { HP, WP } from "../../../../Utils/Resposive";
+import { COLORS } from "../../../Constants/Colors";
+
+const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+    backgroundColor: COLORS.white,
+    alignItems: "center",
+  },
+  datePicker: {
+    flexDirection: "row",
+    alignItems: "center",
+    flex: 1,
+    justifyContent: "space-evenly",
+  },
+  countryPickerIos: {
+    justifyContent: "space-between",
+    paddingHorizontal: widthPercentageToDP("4"),
+    flexDirection: "row",
+    alignItems: "center",
+    // backgroundColor: "red",
+  },
+
+  textmain: {
+    flex: 1,
+    paddingHorizontal: widthPercentageToDP("3"),
+    flexDirection: "column",
+    marginTop: widthPercentageToDP("2"),
+  },
+  dob: {
+    marginTop: heightPercentageToDP("3"),
+    flexDirection: "row",
+    alignItems: "center",
+    // margin: 8,
+    padding: 5,
+    marginTop: 8,
+  },
+  dobtext: {
+    fontSize: 15,
+    fontFamily: "Roboto",
+    fontWeight: "bold",
+  },
+  dobtextIos: {
+    fontSize: 15,
+    fontFamily: "Roboto",
+    fontWeight: "bold",
+    marginTop: HP(1),
+  },
+  subtext: {
+    fontSize: 14,
+    fontWeight: "700",
+    fontFamily: "Roboto",
+    color: COLORS.black,
+  },
+  detail: {
+    flex: 1,
+    // justifyContent: "space-between",
+    alignItems: "center",
+    // backgroundColor: "green",
+  },
+  country: {
+    width: widthPercentageToDP("23"),
+    height: heightPercentageToDP("5.2"),
+    backgroundColor: COLORS.white,
+    borderColor: COLORS.cocoGrey,
+    borderWidth: 1,
+    marginTop: widthPercentageToDP("5"),
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  state: {
+    flex: 1,
+    justifyContent: "center",
+    borderColor: COLORS.cocoGrey,
+
+    borderWidth: 1,
+    marginTop: widthPercentageToDP("5"),
+    width: WP(80),
+    height: heightPercentageToDP("5.2"),
+  },
+  IosPicker: {
+    justifyContent: "center",
+    borderColor: COLORS.cocoGrey,
+    borderWidth: 1,
+    marginTop: widthPercentageToDP("5"),
+    height: heightPercentageToDP("5.2"),
+    width: WP(90),
+  },
+  IosPicker2: {
+    justifyContent: "center",
+    borderColor: COLORS.cocoGrey,
+    borderWidth: 1,
+    marginTop: widthPercentageToDP("5"),
+    width: WP(90),
+    height: heightPercentageToDP("5.2"),
+  },
+  IosPicker3: {
+    justifyContent: "center",
+    borderColor: COLORS.cocoGrey,
+    borderWidth: 1,
+    marginTop: widthPercentageToDP("5"),
+    width: WP(90),
+    height: heightPercentageToDP("5.2"),
+  },
+  city: {
+    flex: 1,
+    justifyContent: "center",
+    borderColor: COLORS.cocoGrey,
+    marginRight: 1,
+    borderWidth: 1,
+    marginTop: widthPercentageToDP("5"),
+    width: WP(80),
+    height: heightPercentageToDP("5.2"),
+  },
+  status: {
+    width: widthPercentageToDP("38"),
+    height: heightPercentageToDP("5.2"),
+    backgroundColor: COLORS.white,
+    borderColor: COLORS.cocoGrey,
+    borderWidth: 1,
+    marginTop: widthPercentageToDP("5"),
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  rect: {
+    width: widthPercentageToDP("80%"),
+    height: heightPercentageToDP("5.2"),
+    borderWidth: 1,
+    borderColor: COLORS.cocoGrey,
+    marginTop: widthPercentageToDP("5"),
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  rect2: {
+    width: 61,
+    height: 37,
+    borderWidth: 1,
+    borderColor: COLORS.cocoGrey,
+    marginTop: -1,
+  },
+  btnmain: {
+    marginBottom: HP(2),
+    flexDirection: "row",
+    justifyContent: "center",
+  },
+  textStyleForCrashInAndroid: {
+    width: "100%",
+    height: 60,
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+  },
+
+  pickerAndroidCoverOnNull: {
+    backgroundColor: COLORS.white,
+    position: "absolute",
+    zIndex: 100,
+
+    paddingHorizontal: WP(4),
+  },
+  txtinputBoxforFBids: {
+    flexDirection: "row",
+    alignItems: "center",
+    width: WP("81"),
+  },
+  stateStyle: {
+    flexDirection: "row",
+    width: WP(80),
+    height: HP(5),
+    borderWidth: 1,
+    borderColor: "#686868",
+    margin: 10,
+
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  btnStyle: {
+    height: 30,
+    width: "30%",
+    backgroundColor: "#DF4B38",
+    color: "black",
+    borderRadius: 25,
+  },
+  calenderStyle: {
+    position: "absolute",
+    alignItems: "flex-end",
+    justifyContent: "center",
+    width: 30,
+    height: 50,
+    zIndex: 100,
+    right: 2,
+    top: 4 /* Adjust the top position as needed */,
+    // backgroundColor: "red",
+  },
+  dateErrorStyle: {
+    color: "red",
+    fontSize: 12,
+    marginTop: 5,
+    textAlign: "center",
+  },
+});
+export default styles;

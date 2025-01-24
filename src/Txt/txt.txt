@@ -1,0 +1,4 @@
+Apk: cd android && ./gradlew assembleRelease
+Abb:npx react-native build-android --mode=release
+GradlewClean: cd android && ./gradlew clean && cd ..
+Testing Abb:yarn android --mode release
